@@ -1,17 +1,26 @@
-# Fuel Log Package.
-
-## Overview
-This Package provide Log class with multi log files.
-
-## Installing
-
-Simply add `log` to your config.php `always_loaded.packages` config option.
-
-## Usage
-
-`fuel/app/config/log.php`
-```php:
 <?php
+/**
+ * Fuel is a fast, lightweight, community driven PHP 5.4+ framework.
+ *
+ * @package    Fuel
+ * @version    1.8.1
+ * @author     Fuel Development Team
+ * @license    MIT License
+ * @copyright  2010 - 2018 Fuel Development Team
+ * @link       http://fuelphp.com
+ */
+
+/**
+ * Fuel Log Package.
+ *
+ * @package     Fuel
+ * @subpackage  Log
+ * @author      ohnaka
+ * @license     MIT License
+ * @copyright   2018 ohnaka
+ * @link        https://github.com/ohnaka0410/FuelPHP-Log
+ */
+
 return array(
 	'default' => array(
 		/**
@@ -25,16 +34,10 @@ return array(
 		 * Fuel::L_ALL
 		 */
 		'threshold'   => Fuel::L_WARNING,
-		// log file dir
 		'path'        => APPPATH.'logs/',
-		// log file
 		'file'        => date('Y').DS.date('m').DS.date('d').DS.'default.php',
-		// log format
 		'format'      => '%level_name% - %datetime% --> %message%'.PHP_EOL,
-		// date format in log
 		'date_format' => 'Y-m-d H:i:s',
-		// allow line break
 		'line_break'  => false,
 	),
 );
-```

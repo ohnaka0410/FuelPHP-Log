@@ -1,0 +1,15 @@
+{
+	"name": "fuel/log",
+	"description" : "A Log package for FuelPHP",
+	"type": "fuel-package",
+	"homepage": "https://github.com/ohnaka0410/FuelPHP-Log",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "ohnaka0410"
+		}
+	],
+	"require": {
+		"composer/installers": "~1.0"
+	}
+}
